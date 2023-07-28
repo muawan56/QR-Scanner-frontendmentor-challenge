@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* || COLOR */
+  --BG-CARD-COLOR: hsl(0, 0%, 100%);
+  --BG-BODY-COLOR: hsl(212, 45%, 89%);
+  --F-HEADER-COLOR: hsl(218, 44%, 22%);
+  --F-COLOR: hsl(220, 15%, 55%);
+
+  /* || FONTS */
+  --FFAMILY: "Outfit", sans-serif;
+}
+
+@media screen and (min-width: 377px) {
+  body {
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    background-color: var(--BG-BODY-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: var(--FFAMILY);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 2rem 0 2rem 0;
+    width: 25%;
+    height: auto;
+    padding: 0.8rem;
+    background-color: var(--BG-CARD-COLOR);
+    border-radius: 0.8rem;
+    gap: 1rem;
+  }
+
+  section img {
+    display: block;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: auto;
+  }
+
+  section.text {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
+
+  section h1 {
+    color: var(--F-HEADER-COLOR);
+    line-height: 1;
+    text-align: center;
+    font-family: var(--FFAMILY);
+    font-weight: 800;
+  }
+
+  div {
+    text-align: center;
+    color: var(--F-COLOR);
+    font-weight: 400;
+    font-family: var(--FFAMILY);
+  }
+}
+
+@media screen and (max-width: 377px) {
+  body {
+    /* flex-direction: row;
+      flex-wrap: nowrap; */
+    background-color: var(--BG-BODY-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: var(--FFAMILY);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 2rem 0 2rem 0;
+    width: 90%;
+    height: auto;
+    padding: 0.8rem;
+    background-color: var(--BG-CARD-COLOR);
+    border-radius: 0.8rem;
+    gap: 1rem;
+  }
+
+  section img {
+    display: block;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: auto;
+  }
+
+  section.text {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
+
+  section h1 {
+    font-weight: 700;
+    color: var(--F-HEADER-COLOR);
+    line-height: 1;
+    text-align: center;
+    font-family: var(--FFAMILY-HEADER);
+  }
+
+  div {
+    text-align: center;
+    color: var(--F-COLOR);
+    font-weight: 400;
+    font-family: var(--FFAMILY-para);
+  }
+}
